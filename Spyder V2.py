@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 22 20:31:15 2020
-
-@author: Administrator
-"""
-
 import speech_recognition as Spyder
 import pyttsx3
 import wikipedia
