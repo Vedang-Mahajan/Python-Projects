@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 22 14:24:59 2020
-
-@author: Administrator
-"""
-
 correct=0
 
 Balance=1000
