@@ -1,0 +1,113 @@
+from time import sleep
+from googletrans import Translator
+
+trans_dict={
+             "english" : "en",
+             "french" : "fr",
+             "afrikaans" : "af",
+             "irish" : "ga" ,
+             "albanian" : "sq",
+             "italian" : "it",
+             "arabic" : "ar",
+             "japanese" : "ja",
+             "azerbaijani": "az",
+             "kannada":"kn",
+             "basque":"eu",
+             "korean":"ko",
+             "bengali":"bn",
+             "latin":"la",
+             "belarusian":"be",
+             "latvian":"lv",
+             "bulgarian":"bg",
+             "lithuanian":"lt",
+             "catalan" : "ca",
+             "macedonian":"mk",
+             "chinese simplefied": "zh-CN",
+             "malay" : "ms",
+             "chinese traditional" : "zh-TW",
+             "maltese":"mt",
+             "german":"de",
+             "croatian":"hr",
+             "norwegian":"no",
+             "czech":"cs",
+             "persian":"fa",
+             "danish":"da",
+             "polish":"pl",
+             "dutch":"nl",
+             "portuguese":"pt",
+             "romanian":"ro",
+             "esparanto":"eo",
+             "russian":"ru",
+             "estonian":"et",
+             "serbian":"sr",
+             "filipino":"tl",
+             "slovak":"sk",
+             "finnish":"fi",
+             "slovenian":"sl",
+             "spanish":"es",
+             "galician":"gl",
+             "swahili":"sw",
+             "georgian":"ka",
+             "swedish":"sv",
+             "tamil":"ta",
+             "greek":"el",
+             "telugu":"te",
+             "gujarati":"gu",
+             "thai":"th",
+             "haitian creole":"ht",
+             "turkish":"tr",
+             "hebrew":"iw",
+             "ukarainian":"uk",
+             "hindi":"hi",
+             "urdu":"ur",
+             "hungarian":"hu",
+             "vietnamese":"vi",
+             "icelandic":"is",
+             "welsh":"cy",
+             "indonesian":"id",
+             "yiddish":"yi"
+             }
+
+
+#sp("Welcome to transaltor")
+print("Welcome to transaltor")
+#sp("to exit enter z in 'Language to translate from")
+
+
+"""Main Code"""
+             
+while True:
+    print("Choose the languages you want to transalate from and to")
+    #sp("Choose 2 keywords for the languages you want to transalate from and to")
+    #sleep(1)
+    source=input("Enter Language to transalte from: ").lower() #Chooses Source Language
+    #sp("Enter Language to transalte from-keyword: ")
+    #sleep(1)
+   
+   
+    sou=trans_dict[source]  
+     
+    destination=input("Enter language to transalate to: ").lower() #Chooses Dest Language
+    #sp("Enter language to transalate to-keyword: ")
+    #sleep(1)
+    des=trans_dict[destination]
+    input_sentence=input("Enter what you want to transalte: ")
+    #sp("Enter what you want to transalte: ")
+
+    translator=Translator()
+
+    translated_sentence=translator.translate(input_sentence, src=sou, dest=des )
+
+    print(translated_sentence.text)
+    sleep(3)#Prints only the text of transated language
+#    engine.say(translated_sentence.pronunciation)
+#    engine.runAndWait()
+    leave=input("Do you want to exit ").lower()
+    if "yes" in leave:
+        break
+   
+
+print("Thanks for using")
+#sp("Thanks for using")
+print("Bye!")
+#sp("Bye!")
