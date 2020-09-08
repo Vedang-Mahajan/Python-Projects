@@ -1,3 +1,5 @@
+# Credits - Team Clever Programmer
+
 import cv2
 from random import randrange
 
