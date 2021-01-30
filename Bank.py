@@ -7,7 +7,7 @@ loan=0
 print("Welcome to TechClub International Bank.")
 a=int(input("Please Enter your Account Number: "))
 
-if a==246801:
+if a==24680:
     correct=correct+1
     
 while correct==1:
